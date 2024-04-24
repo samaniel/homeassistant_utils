@@ -126,9 +126,14 @@ hass.services.call('vacuum', 'send_command', {
 ############# Clear all boolean states to false ##############
 ##############################################################
 ######### ->>ADD YOUR STUFF TO THIS SECTION!!!!!!<<- #########
+hass.states.set('input_boolean.roombatwopass', 'off', '')
+hass.states.set('input_boolean.roombascrub', 'off', '')
+hass.states.set('input_boolean.roombapowerful', 'off', '')
+hass.states.set('input_boolean.roombamop', 'off', '')
+hass.states.set('input_boolean.roombamopultrawater', 'off', '')
 
+//add one entry per existing input_boolean, eg:
 hass.states.set('input_boolean.entrada', 'off', '')
-//add one entry per existing input_boolean
 
 
 
